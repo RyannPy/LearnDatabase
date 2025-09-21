@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aplikasi Keuangan</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu-container">
+      <h1 class="judul">💰 Aplikasi Keuangan</h1>
+      <p class="subjudul">Kelola pemasukan dan pengeluaranmu dengan mudah</p>
+
+      <div class="menu-box">
+  <a href="{{ url_for('pemasukan') }}"><button>➕ Input Pemasukan</button></a>
+  <a href="{{ url_for('pengeluaran') }}"><button>➖ Input Pengeluaran</button></a>
+  <a href="{{ url_for('tampil') }}"><button>📊 Tampilkan Data</button></a>
+  <a href="{{ url_for('login') }}"><button class="logout">🚪 Logout</button></a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      function goTo(menu) {
+        if (menu === "pemasukan") {
+          window.location.href = "pemasukan.html";
+        } else if (menu === "pengeluaran") {
+          window.location.href = "pengeluaran.html";
+        } else if (menu === "tampil") {
+          window.location.href = "tampil.html";
+        } else if (menu === "logout") {
+          window.location.href = "login.html"; // balik ke halaman login
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background: #0f0f10;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Ubuntu";
+}
+
+/* Container */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(145deg, #1a1a1d, #171718);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #9d4edd;
+}
+
+/* Input group */
+.input-group {
+  margin: 0 22px 18px 0;
+}
+
+label {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+  display: block;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1a1a1d;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #9d4edd;
+  box-shadow: 0 0 6px rgba(157, 78, 221, 0.6);
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #9d4edd, #7a2fbd);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(157, 78, 221, 0.6);
+}
+
+/* Toggle text */
+.toggle {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.toggle a {
+  color: #9d4edd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle a:hover {
+  text-decoration: underline;
+}
+
+/* Hide & Show form */
+.hidden {
+  display: none;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 20px;
+    margin: 0 15px;
+  }
+}

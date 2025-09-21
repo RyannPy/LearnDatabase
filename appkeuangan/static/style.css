@@ -1,0 +1,118 @@
+/* Font dan body */
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background: #0f0f10;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container umum */
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: linear-gradient(145deg, #1a1a1d, #171718);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* Judul */
+.judul {
+  color: #9d4edd;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subjudul {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+/* Input form */
+.input-group {
+  text-align: left;
+  margin: 0 22px 18px 0;
+}
+
+label {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1a1a1d;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #9d4edd;
+  box-shadow: 0 0 6px rgba(157, 78, 221, 0.6);
+  outline: none;
+}
+
+/* Tombol */
+a {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #9d4edd, #7a2fbd);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(157, 78, 221, 0.6);
+}
+
+
+.success {
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  border: 1px solid rgba(16,185,129,0.15);
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  border: 1px solid rgba(239,68,68,0.12);
+}
+
+
+/* Responsif */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    margin: 0 15px;
+  }
+  a {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
